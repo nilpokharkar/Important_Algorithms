@@ -1,7 +1,7 @@
 # Important_Algorithms
 
 This folder contains Important Algorithms and it's examples.
-1. Kadane's algorithm: 
+1. Kadane's algorithm: O(n) Time complexity
 - Contiguous Subarray
 - Maximum Subarray (Largest sum contiguous subarray)
 - Contiguous Increasing subarray
