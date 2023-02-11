@@ -1,8 +1,15 @@
-Binary Search Algorithm:
-- Faster than Linear Search ALgorithms
+Binary Search Algorithm/Half Interval Serach/Binary Chop:
+- Faster than Linear Search ALgorithms(slightly better)
 - Will run on the **SORTED LIST**
 
 
 Algorithm:
 1. Consider the array/list arr and the target element to search.
-2. Initialize start=0, end= arr.length, mid = start + (end-start)/2 *(This mid formuala is better than mid = start+end/2 or arr.length/2 bcoz if the value of start and end is very large i.e. close to 2<sup>31</sup> then overflow can occur.)*
+2. Initialize start=0, end= arr.length, mid = start + (end-start)/2.
+*(This mid formuala is better than mid = start+end/2 or arr.length/2 bcoz if the value of start and end is very large i.e. close to 2<sup>31</sup> then overflow can occur.)*
+3. if arr[mid] == target then return mid.
+4. if arr[mid] < target then start = mid+1 //This means that the target may be present in the right half.
+5. else end=mid-1 //This means that the target may be inthe first half thus reduce the search only in left part.
+6. Repeat 2,3,4,5 untill the target is found at mid or return -1.
+
+Implementation: Iterative and Recursive(https://medium.com/swlh/binary-search-algorithm-101-53e564659d82)
