@@ -1,0 +1,8 @@
+Binary Search Algorithm:
+- Faster than Linear Search ALgorithms
+- Will run on the **SORTED LIST**
+
+
+Algorithm:
+1. Consider the array/list arr and the target element to search.
+2. Initialize start=0, end= arr.length, mid = start + (end-start)/2 *(This mid formuala is better than mid = start+end/2 or arr.length/2 bcoz if the value of start and end is very large i.e. close to 2<sup>31</sup> then overflow can occur.)*
